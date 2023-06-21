@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peacock Silks</title>
 
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
+ 
 </head>
 <body>
+
+    <input type="checkbox" id ="nav-toggle">
     <div class="sidebar">
 
         <div class="sidebar-logo">
-            <h2><span class="las la-feather-alt"></span>Peacock Silks</h2>
+            <h2><span class="las la-feather-alt"></span><span>Peacock Silks</span> </h2>
         </div>
 
         <div class="sidebar-menu">
@@ -40,12 +43,12 @@
 
     <div class="main-content">
         <header>
-            <h1>
-                <label for="">
+            <h2>
+                <label for="nav-toggle">
                     <span class="las la-bars"></span>
                 </label>
                 Dashboard
-            </h1>
+            </h2>
 
             <div class="search-wrapper">
                 <span class="las la-search"></span>
@@ -60,6 +63,10 @@
                 </div>
             </div>
         </header>
+
+
+
+
 
         <main>
             <div class="cards">
@@ -85,13 +92,183 @@
 
                 <div class="card-single">
                     <div>
-                        <h1><span class="las la-rupee-sign">47310</span></h1>
+                        <h1>₹307310</h1>
                         <span>Revenue</span>
                     </div>
                     <div>
-                        <span class="las la-google-wallet"></span>
+                        <span class="las la-wallet"></span>
                     </div>
                 </div>
+            </div>
+
+
+
+
+            <div class="recent-grid">
+
+                <div class="orders">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Recent Orders</h3>
+                            <button>See all <span class="las la-arrow-right"></span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="tabke-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Order ID</td>
+                                            <td>Order details</td>                                        
+                                            <td>Order status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#006</td>
+                                            <td>Saree 5214</td>
+                                            <td><span class="status orange"></span>Dispatched</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#005</td>
+                                            <td>Top 97 L, Saree 678</td>
+                                            <td><span class="status pink"></span>Delivered</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>#004</td>
+                                            <td>Saree 124</td>
+                                            <td><span class="status orange"></span>Dispatched</td>                                    
+                                        </tr>
+                                        <tr>
+                                            <td>#003</td>
+                                            <td>Chudi 987 M</td>
+                                            <td><span class="status pink"></span>Delivered</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>#002</td>
+                                            <td>shirt bb3 XL</td>
+                                            <td><span class="status orange"></span>Dispatched</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>pegion iw 48 M</td>
+                                            <td><span class="status purple"></span>In transit</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customers">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>New Customers</h3>
+                            <button>See all <span class="las la-arrow-right"></span></button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="mumtaj.jpeg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Mumtaj S</h4>
+                                        <small>Mumbai</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="kaif.jpeg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Katrina kaif</h4>
+                                        <small>Delhi</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+
+                                <div class="info">
+                                    <img src="surya.jpg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Surya S</h4>
+                                        <small>Dindigul</small>
+                                    </div>
+                                    
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="9.jpeg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Nayanthara V</h4>
+                                        <small>Chennai</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="AK.jpeg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Ajith Kumar</h4>
+                                        <small>Chennai</small>    
+                                    </div>
+
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="bean.jpeg" width="40px" height="40px" alt="">
+                                    <div>
+                                        <h4>Mr. Bean</h4>
+                                        <small>London</small>
+                                    </div>    
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                
+
+
 
         </main>
     </div>
